@@ -1,0 +1,5 @@
+<div cdkDropList class="example-list" (cdkDropListDropped)="drop($event)">
+  <div class="example-box" *ngFor="let movie of movies" (click)="sendMessage()" cdkDrag>{{movie}}
+    <button mat-button (click)="openDialog()">Open dialog</button>
+  </div>
+</div>
